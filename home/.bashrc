@@ -22,10 +22,9 @@ for f in ~/.scripts/*; do source $f; done
 
 # Settings and environment
 
-export PATH=~/.gem/ruby/:$PATH
 set -o vi
 
-#functions and aliases
+# functions and aliases
 
 function line
 {
