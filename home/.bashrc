@@ -25,18 +25,7 @@ for f in ~/.scripts/*; do source $f; done
 export PATH=~/.gem/ruby/:$PATH
 set -o vi
 
-source /opt/bats/share/git/contrib/completion/git-completion.bash
-
-# Setup environment
-loadenv bzx
-use_clang_ib
-
-# Aliases
-
-alias eenv='echo $ECN_ENVIRONMENT'
-
-alias dbs_total='~/source/db/code/bootstrap_parallel.py -d std'
-alias dbs='~/source/db/code/bootstrap.py -dfq'
+#functions and aliases
 
 function line
 {
@@ -48,9 +37,4 @@ function line
     printf '\n\n'
 }
 alias list='line'
-
-alias grept='ecn_unit_test --list | grep'
-alias runt='ecn_unit_test -t'
-
-alias gsm='~/ecn/source/system_tests/scripts/gsm_processes.py'
 
