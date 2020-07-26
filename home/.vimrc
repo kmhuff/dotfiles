@@ -1,3 +1,6 @@
+syntax on
+colorscheme elflord
+
 set cindent
 
 " get rid of autocomments
