@@ -37,3 +37,8 @@ function line
 }
 alias list='line'
 
+function rand
+{
+    echo $((1 + RANDOM % ${1-100}))
+}
+
