@@ -1,5 +1,6 @@
 syntax on
 colorscheme elflord
+hi TabLine ctermfg=Black ctermbg=White
 
 set cindent
 
