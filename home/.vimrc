@@ -2,7 +2,7 @@ syntax on
 colorscheme elflord
 hi TabLine ctermfg=Black ctermbg=White
 
-set cindent
+filetype plugin indent on
 
 " get rid of autocomments
 autocmd FileType * set formatoptions-=c formatoptions-=r formatoptions-=o
