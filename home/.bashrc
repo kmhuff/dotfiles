@@ -16,6 +16,16 @@ parse_git_branch() {
 
 export PS1='\[\e[0;36m\]\u@\h \w\[\e[m\]\[\e[0;32m\]$(parse_git_branch) $\[\e[m\] '
 
+# functions needed for scripts
+
+function pupdate 
+{
+    case ":${PATH:=$1}:" in 
+        *:"$1":*) ;;
+        *) PATH="$1:$PATH" ;; 
+    esac; 
+}
+
 # scripts and sources
 
 for f in ~/.scripts/*; do source $f; done
@@ -23,6 +33,7 @@ for f in ~/.scripts/*; do source $f; done
 # Settings and environment
 
 set -o vi
+export EDITOR='/usr/bin/vim'
 
 # functions and aliases
 
